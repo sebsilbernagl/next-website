@@ -17,7 +17,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "export": "next export",
     "start": "next start"
+    
   },
   "author": "Sebastian Silbernagl | @sebsilbernagl",
   "license": "ISC"
