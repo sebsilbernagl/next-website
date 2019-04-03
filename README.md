@@ -6,7 +6,4 @@ This is website built with Next.js.
 ```
 npm install
 npm run dev
-
-```# next-website
-# next-website
-# next-website
+```
