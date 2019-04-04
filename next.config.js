@@ -33,11 +33,3 @@ module.exports = withCSS(withSass({
     }
   }
 }))
-
-module.exports = {
-  exportPathMap: function() {
-    return {
-      '/': { page: '/' }
-    }
-  }
-}

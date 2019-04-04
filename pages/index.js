@@ -12,7 +12,7 @@ import {
   Nav
 } from "react-bootstrap";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
-import "../style.scss";
+import "../style/style.scss";
 import AboutTileImg from "../components/aboutTileImg";
 import AboutSummary from "../components/aboutSummary";
 import Ur7sDisc from "../components/ultimaterugbysevens/ur7sdisc";
@@ -28,7 +28,7 @@ const Index = () => (
     <Nav className="justify-content-end" activeKey="/home">
       <Nav.Item>
         <Link>
-          <Nav.Link href="/about" active>
+          <Nav.Link href="/about">
             about
           </Nav.Link>
         </Link>
