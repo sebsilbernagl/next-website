@@ -2,7 +2,7 @@
 
 This is a website built with Next.js with the goal of using the static export shipped with NextJS.
 
-To see a completed static exported site, visit sebsilbernagl.me
+To see a completed static exported site, ~~visit sebsilbernagl.me~~ see NextJs docs for now ;)
 
 ### Roadmap
 
