@@ -31,5 +31,10 @@ module.exports = withCSS(withSass({
         theme: JSON.stringify(process.env.REACT_APP_THEME)
       }
     }
+  },
+  exportPathMap: function() {
+    return {
+      '/': { page: '/' }
+    }
   }
 }))

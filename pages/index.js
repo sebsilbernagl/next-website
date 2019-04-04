@@ -9,7 +9,10 @@ import {
   Jumbotron,
   Button,
   Image,
-  Nav
+  Nav,
+  Card,
+  ListGroup,
+  ListGroupItem
 } from "react-bootstrap";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../style/style.scss";
@@ -17,7 +20,9 @@ import AboutTileImg from "../components/aboutTileImg";
 import AboutSummary from "../components/aboutSummary";
 import Ur7sDisc from "../components/ultimaterugbysevens/ur7sdisc";
 import Ur7sBriefImg from "../components/ultimaterugbysevens/aboutTileImg";
-
+import Ur7sCard from "../components/ultimaterugbysevens/ur7sCard";
+import SmcCard from "../components/smcreative/smcCard";
+import TwelveElevenCard from "../components/twelveeleven/twelveElevenCard";
 
 const Index = () => (
   <div>
@@ -25,12 +30,10 @@ const Index = () => (
       <title>sebsilbernagl</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <Nav className="justify-content-end" activeKey="/home">
+    <Nav className="justify-content-end">
       <Nav.Item>
         <Link>
-          <Nav.Link href="/about">
-            about
-          </Nav.Link>
+          <Nav.Link href="/about">about</Nav.Link>
         </Link>
       </Nav.Item>
       <Nav.Item>
@@ -44,70 +47,72 @@ const Index = () => (
       </Nav.Item>
     </Nav>
     {/* 1. Hero. */}
-    <Row>
-    <Col className="align-self-center align-items-center">
-    <Image lg={12}
-            md={12}
-            sm={12}
-            src="../static/logo.svg"
-            className="padding10"/>
-      <p>
-        This is a simple hero unit, a simple jumbotron-style component for
-        calling extra attention to featured content or information.
-      </p>
-      <p>
-        <Button variant="primary">Learn more</Button>
-      </p>
-    </Col>
+    <Row className="vh80 row-blue">
+      <Col auto />
+      <Col
+        lg={6}
+        md={8}
+        sm={12}
+        className="align-self-center align-items-center text-center padding10"
+      >
+        <Image src="../static/logo.svg" className="padding-bot5" />
+        <h1 className="small double-spacing">
+            Business Minded Web Development, <br></br> Marketing & Branding Strategies
+        </h1>
+      </Col>
+      <Col auto />
     </Row>
-    ;
     <Container fluid>
-      <Row>
-        <Col lg={6} md={12}>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
-          <br />
-          <Link href="/work">
-            <a>Work</a>
-          </Link>
-          <br />
-          <Link href="/project">
-            <a>Project</a>
-          </Link>
-          <br />
-        </Col>
-        <Col lg={6}>
-          <p>Hello Next.js</p>
-        </Col>
-      </Row>
+      {/* About Row */}
       <Row>
         <AboutTileImg />
         <AboutSummary />
       </Row>
+      {/* Work Row */}
+      <Row className="padding-top5 row-blue">
+        <Col auto />
+        <Col
+          lg={6}
+          md={8}
+          sm={12}
+          className="align-self-center align-items-center text-left padding5"
+        >
+          <h2>Method & Work</h2>
+          <p className="text-left">
+            The purpose of business oreintated web development is to place emphasis on solving your problem. I work with your 
+            business goals and long term objectives to create solutions tailored to your needs – each business is different.<br/><br/>
+            I work with great freelancers to form bespoke and powerful teams for various projects. 
+            <span> Here's some of our latest work:</span>
+          </p>
+        </Col>
+        <Col auto />
+      </Row>
+      {/* Cards */}
+      <Row className="row-blue padding-bot5">
+        <Col auto />
+        <Col lg={3}
+            md={3}
+            sm={12}  className="padding-top-bot2">
+          <Ur7sCard/>
+        </Col>
+        <Col lg={3}
+            md={3}
+            sm={12}  className="padding-top-bot2">
+          <SmcCard />
+        </Col>
+        <Col lg={3}
+            md={3}
+            sm={12} className="padding-top-bot2">
+          <TwelveElevenCard />
+        </Col>
+        <Col auto />
+      </Row>
       <Row>
-      <Ur7sDisc></Ur7sDisc>
-        <Ur7sBriefImg></Ur7sBriefImg>
+        <Ur7sDisc />
+        <Ur7sBriefImg />
       </Row>
     </Container>
-    ;
-    <style jsx>{`
-      h1 {
-        text-align: center;
-      }
-      .jumbotron {
-        background-color: yellow;
-      }
-      .content_right {
-        padding-left: 5%;
-        padding-right: 5%;
-      }
-      p {
-        color: red;
-        display: flex;
-        align-items: center;
-      }
-    `}</style>
+    ;<style jsx>{``}</style>
   </div>
 );
 

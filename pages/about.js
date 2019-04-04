@@ -12,7 +12,7 @@ import {
   Nav
 } from "react-bootstrap";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
-import "../style.scss";
+import "../style/style.scss";
 import Ur7sHeroImg from "../components/ultimaterugbysevens/ur7shero";
 
 const About = () => (
