@@ -31,7 +31,7 @@ const Index = () => (
       <title>sebsilbernagl</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <Nav>
+    {/* <Nav>
       <Nav.Item>
           <Nav.Link>about</Nav.Link>
       </Nav.Item>
@@ -44,7 +44,7 @@ const Index = () => (
       <Nav.Item>
         <Nav.Link>Disabled</Nav.Link>
       </Nav.Item>
-    </Nav>
+    </Nav> */}
     {/* 1. Hero. */}
     <Row className="vh80 row-blue">
       <Col auto />
