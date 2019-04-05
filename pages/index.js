@@ -23,18 +23,17 @@ import Ur7sBriefImg from "../components/ultimaterugbysevens/aboutTileImg";
 import Ur7sCard from "../components/ultimaterugbysevens/ur7sCard";
 import SmcCard from "../components/smcreative/smcCard";
 import TwelveElevenCard from "../components/twelveeleven/twelveElevenCard";
+import FooterBar from "../components/footerBar";
 
 const Index = () => (
-  <div>
+  <div className="no-padding-margin">
     <Head>
       <title>sebsilbernagl</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <Nav className="justify-content-end">
+    <Nav>
       <Nav.Item>
-        <Link>
-          <Nav.Link href="/about">about</Nav.Link>
-        </Link>
+          <Nav.Link>about</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link>work</Nav.Link>
@@ -62,7 +61,7 @@ const Index = () => (
       </Col>
       <Col auto />
     </Row>
-    <Container fluid>
+    <Container fluid className="no-padding-margin">
       {/* About Row */}
       <Row>
         <AboutTileImg />
@@ -107,10 +106,11 @@ const Index = () => (
         </Col>
         <Col auto />
       </Row>
-      <Row>
+      {/* <Row>
         <Ur7sDisc />
         <Ur7sBriefImg />
-      </Row>
+      </Row> */}
+      <FooterBar/>
     </Container>
     ;<style jsx>{``}</style>
   </div>

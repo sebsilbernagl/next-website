@@ -4,7 +4,7 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../../style/style.scss";
 
 const TwelveElevenCard = () => (
-  <Card className="shadow">
+  <Card className="dropshadow">
     <Card.Img variant="top" src="static/twelveElevenHero.jpg" />
     <Card.Body>
       <Card.Title>

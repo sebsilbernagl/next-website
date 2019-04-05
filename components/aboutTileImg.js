@@ -4,7 +4,7 @@ import { Row, Col, Container, Image } from "react-bootstrap";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 
 const AboutTileImg = () => (
-          <Col lg={6} md={6} sm={12}>
+          <Col lg={6} md={6} sm={12} className="no-paddding-margin">
             <Image className="tileLeft" src="../static/capeTown.jpg" fluid />
           </Col>
 );

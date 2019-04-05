@@ -4,7 +4,7 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../../style/style.scss";
 
 const SmcCard = () => (
-  <Card className="shadow">
+  <Card className="dropshadow">
     <Card.Img variant="top" src="static/smcreativeHero.jpg" />
     <Card.Body>
       <Card.Title>
